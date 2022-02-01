@@ -19,6 +19,10 @@ pipeline {
             }
         }
         stage('deploy') {
+            when {
+                expression {
+                    BRANCH_NAME == 'dev'
+                }
             steps {
                 sh 'python -v'
                 sh 'ls -la'
