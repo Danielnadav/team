@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                echo "The author name is ${env.GIT_AUTHOR_NAME}"
+                echo "The author name is ${env.GIT_BRANCH}"
             }
         }
 }
