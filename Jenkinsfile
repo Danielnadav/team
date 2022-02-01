@@ -10,7 +10,7 @@ pipeline {
         stage('test') {
             when {
                 expression {
-                    BRANCH_NAME == 'master'
+                    BRANCH == 'master'
                 }
             }
             steps {
@@ -21,7 +21,7 @@ pipeline {
         stage('deploy') {
             when {
                 expression {
-                    BRANCH_NAME == 'dev'
+                    BRANCH == 'dev'
                 }
             steps {
                 sh 'python -v'
