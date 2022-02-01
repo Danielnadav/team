@@ -28,19 +28,9 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        post {
-            always {
-
-            }
-            success {
-
-            }
-            failure {
-
-            }
-        }
 
     }
+}
 }
 
 
