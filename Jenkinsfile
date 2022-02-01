@@ -14,7 +14,7 @@ pipeline {
                 }
             }
             steps {
-                echo $BUILD_NUMBER
+                echo the build is BUILD_NUMBER
             }
         }
 }
