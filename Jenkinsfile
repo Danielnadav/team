@@ -15,7 +15,13 @@ pipeline {
             }
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                echo "The author name is ${env.GIT_BRANCH}"
+                echo "The working branch is ${env.GIT_BRANCH}"
+            }
+        }
+        stage(verifay) {
+            steps {
+                echo "the working workspace is ${env.WORKSPACE}"
+
             }
         }
 }
