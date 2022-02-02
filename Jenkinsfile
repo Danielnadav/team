@@ -27,7 +27,7 @@ pipeline {
 }
 // condeitions for post
     post {
-        always {
+        failure {
 
             echo 'the build worked'
 
