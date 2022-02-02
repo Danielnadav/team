@@ -25,6 +25,19 @@ pipeline {
             }
         }
 }
+// condeitions for post
+post {
+    always {
+
+    }
+    success {
+        echo 'the build worked'
+
+    }
+    failure {
+
+    }
+}
 }
 
 
