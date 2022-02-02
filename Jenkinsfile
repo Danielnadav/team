@@ -26,15 +26,13 @@ pipeline {
         }
 }
 // condeitions for post
-post {
-    always {
+    post {
+        always {
 
-    }
-    success {
-        echo 'the build worked'
+            echo 'the build worked'
 
+        }
     }
-}
 }
 
 
