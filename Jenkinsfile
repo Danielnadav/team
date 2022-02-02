@@ -34,9 +34,6 @@ post {
         echo 'the build worked'
 
     }
-    failure {
-
-    }
 }
 }
 
