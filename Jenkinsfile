@@ -27,9 +27,19 @@ pipeline {
 }
 // condeitions for post
     post {
-        failure {
+        success {
 
             echo 'the build worked'
+
+        }
+        failure {
+
+            echo 'the build failure'
+
+        }
+        aborted {
+
+            echo 'the build aborted'
 
         }
     }
