@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo "The working branch is ${env.GIT_BRANCH}"
-                echo "lets test date ${env.TAG_DATE}"
+
             }
         }
         stage(verifay) {
@@ -31,6 +31,7 @@ pipeline {
         success {
 
             echo 'the build worked'
+            echo '${env.TAG_NAME}'
 
         }
         failure {
