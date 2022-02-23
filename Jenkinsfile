@@ -21,7 +21,7 @@ pipeline {
         }
         stage(verifay) {
             steps {
-                echo "the working workspace is ${env.WORKSPACE}"
+                echo "the working workspace is ${env.JOB_DISPLAY_URL}"
 
             }
         }
