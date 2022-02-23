@@ -31,7 +31,7 @@ pipeline {
         success {
 
             echo 'the build worked'
-            echo "${env.TAG_NAME}"
+            echo "${env.GIT_BRANCH}"
 
         }
         failure {
