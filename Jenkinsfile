@@ -31,7 +31,7 @@ pipeline {
         success {
 
             echo 'the build worked'
-            echo 'The build branch is' "${env.GIT_BRANCH}"
+            echo 'The build branch is "${env.GIT_BRANCH}"'
 
         }
         failure {
